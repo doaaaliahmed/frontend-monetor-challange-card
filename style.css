@@ -84,7 +84,7 @@ body {
 }
 
 .front_card_number {
-  font-size: 2em;
+  font-size: 1.7em;
   letter-spacing: 2px;
 }
 
@@ -113,7 +113,8 @@ form label {
   display: block;
   margin-bottom: 5px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 12px;
 }
 
 form input {
@@ -213,9 +214,7 @@ form input:focus{
   letter-spacing: 2px;
 }
 
-form label{
-  font-size: 12px;;
-}
+
 
 }
 
