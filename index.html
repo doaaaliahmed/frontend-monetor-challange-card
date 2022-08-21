@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="card_side">
+        <div class="card">
+          <div class="master_card back_card">
+            <img
+              src="./images/bg-card-back.png"
+              alt="back_card"
+              class="back_card_img"
+            />
+            <div class="back_card_information">
+              <div class="back_card_num">000</div>
+            </div>
+          </div>
+
+          <div class="master_card fornt_card">
+            <img
+              src="./images/bg-card-front.png"
+              alt="front_card"
+              class="front_card_img"
+            />
+            <div class="front_card_information">
+              <div class="front_card_icon">
+                <img src="./images/card-logo.svg" alt="logo" />
+              </div>
+              <div class="front_card_number">0000 0000 0000 0000</div>
+              <div class="front_card_info">
+                <p class="credit_Name">Jane Appleseed</p>
+                <p class="credit_date">
+                  <span class="credit_month">00</span>
+                  /
+                  <span class="credit_year">00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form_side">
+        <form class="form_container">
+          <div class="form_item">
+            <label for="name">Cardholder Name</label>
+            <input
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+              id="name"
+              
+            />
+            <div class="error error-name">please enter valid name</div>
+          </div>
+          <div class="form_item">
+            <label for="cardNumber">Card Number</label>
+            <input
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000"
+              id="cardNumber"
+              maxlength="16"
+              
+            />
+            <div class="error error-number">please enter valid Number</div>
+          </div>
+          <div class="form_item date_information">
+            <div class="date_container">
+              <label for="EXPDate">Exp. Date (MM/YY)</label>
+              <input type="number" placeholder="MM" id="month" min="1" max="31" />
+              <input type="number" placeholder="YY" id="year" />
+              <div class="error error-date">please enter valid Date</div>
+            </div>
+            <div class="cvc_container">
+              <label for="cvc">CVC</label>
+              <input
+                type="text"
+                placeholder="e.g. 123"
+                id="cvc"
+                maxlength="3"
+               
+              />
+              <div class="error error-cvc">please enter valid number</div>
+            </div>
+          </div>
+          <button class="btn submit-btn" type="submit">Confirm</button>
+        </form>
+        <div class="confirmed_message hidden">
+          <div class="check_icon">
+            <img src="./images/icon-complete.svg" alt='icon-complete'/>
+          </div>
+          <h2 class="thanks">Thank You !</h2>
+          <p>We've added your card details</p>
+          <button class="btn continue-btn">Continue</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
