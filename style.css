@@ -206,7 +206,18 @@ form input:focus{
 }
 
 
+@media (max-width: 376px) {
 
+.front_card_number {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+form label{
+  font-size: 12px;;
+}
+
+}
 
 @media (min-width: 768px) {
   .container {
